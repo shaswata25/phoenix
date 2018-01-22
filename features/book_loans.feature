@@ -1,6 +1,6 @@
 Scenario: Placing a successful book loan where my extension is not HIGHER than 4 times
     Given the following book loans are open
-        | title                              | code |   start_date	  |   due_date |   timesextended
+        | title                              | code |   start_date	  |   due_date |   times_extended
         | Programming Phoenix 1.3            | A    | 09-01-2018      | 16-01-2018 |    0
         | Secrets of the JavaScript ninja    | A    | 19-12-2017      | 16-01-2018 |    4
         | The Little Prince                  | A    | 07-08-2017      | 21-08-2017 |    1
@@ -11,3 +11,5 @@ Scenario: Placing a successful book loan where my extension is not HIGHER than 4
     And I want to extend loan on "Programming Phoenix 1.3 "
     When I click on Extend action
     Then I should get a message "extension accepted"
+
+    
