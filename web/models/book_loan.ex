@@ -16,7 +16,7 @@ defmodule LearningPhx.BookLoan do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:start_time, :end_time, :time_extended])
+    |> cast(params, [:start_time, :end_time, :time_extended, :user_id, :book_id])
     |> validate_required([:start_time, :end_time, :time_extended])
   end
 end
