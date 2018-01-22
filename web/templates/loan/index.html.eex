@@ -1,0 +1,28 @@
+<h2>My Book Loans</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>code</th>
+      <th>Start date</th>
+      <th>Due date</th>
+      <th>Time Extended</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for loan <- @loans do %>
+    <tr>
+      <td><%= loan.title %></td>
+      <td><%= loan.code%></td>
+      <td><%= loan.start_date %></td>
+      <td><%= loan.due_date %></td>
+      <td><%= loan.times_extended %></td>
+      <td>Extended</td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+

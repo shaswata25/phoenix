@@ -5,8 +5,8 @@ defmodule LearningPhx.Loan do
     field :title, :string
     field :code, :string
     field :start_date, :string
-    field :end_date, :string
-    field :time_extended, :integer
+    field :due_date, :string
+    field :times_extended, :integer
 
     timestamps()
   end
@@ -16,7 +16,7 @@ defmodule LearningPhx.Loan do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:title, :code, :start_date, :end_date, :time_extended])
-    |> validate_required([:title, :code, :start_date, :end_date, :time_extended])
+    |> cast(params, [:title, :code, :start_date, :due_date, :times_extended])
+    |> validate_required([:title, :code, :start_date, :due_date, :times_extended])
   end
 end

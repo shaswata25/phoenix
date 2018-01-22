@@ -17,6 +17,7 @@ defmodule LearningPhx.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/loans", LoanController, :index
   end
 
   # Other scopes may use custom stacks.

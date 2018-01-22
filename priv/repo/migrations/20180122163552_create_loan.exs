@@ -6,8 +6,8 @@ defmodule LearningPhx.Repo.Migrations.CreateLoan do
       add :title, :string
       add :code, :string
       add :start_date, :string
-      add :end_date, :string
-      add :time_extended, :integer
+      add :due_date, :string
+      add :times_extended, :integer
 
       timestamps()
     end
