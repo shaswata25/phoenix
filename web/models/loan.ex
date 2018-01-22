@@ -4,8 +4,8 @@ defmodule LearningPhx.Loan do
   schema "loans" do
     field :title, :string
     field :code, :string
-    field :start_date, :date
-    field :end_date, :date
+    field :start_date, :string
+    field :end_date, :string
     field :time_extended, :integer
 
     timestamps()
